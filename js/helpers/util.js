@@ -1,5 +1,9 @@
+import eventListeners from './eventhandlers.js'
+
+
+
 const init = () =>{
-console.log('hello');
+    eventListeners.addCheckEventListener();
 };
 
 export default { init }; 
