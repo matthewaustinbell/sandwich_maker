@@ -1,5 +1,5 @@
 const init = () =>{
-    
+console.log('hello');
 };
 
-init(); 
+export default { init }; 

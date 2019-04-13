@@ -1,4 +1,4 @@
-# sandwich-maker
+# sandwich_maker
 makes and array of pie
 
 ## Screenshots
