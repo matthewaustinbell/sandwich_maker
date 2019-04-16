@@ -1,8 +1,8 @@
 const cheeses = {
-    asiago: 1.15,
-    white: 1.23,
-    wheat: 1.43,
-    rosemary: 1.06
+    cheddar: 1.51,
+    provolone: 1.32,
+    swiss: 1.34,
+    monterey: 1.07
 };
 
 
