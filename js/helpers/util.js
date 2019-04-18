@@ -4,4 +4,8 @@ const init = () =>{                    // declared init variable to in initializ
     eventListeners.addCheckEventListener(); // within this function addCheckEventListener function is called 
 };
 
+printToDom = () =>{
+    
+}
+
 export default { init }; 

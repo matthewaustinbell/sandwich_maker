@@ -1,4 +1,5 @@
 import eventListeners from './sandwich.js'
+import button from './button.js'
 
 //Notes
 //create a variable with name checkBoxes 
@@ -14,6 +15,11 @@ const addCheckEventListener = () => {
         eventListeners.determineComponent(e.target.id)    
         })
     }
+    document.getElementById('orderButton').addEventListener('click', button.sandwich); ///activates button
 }
+
+
+
+
 
    export default { addCheckEventListener }; 
