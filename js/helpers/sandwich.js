@@ -1,6 +1,9 @@
 
-
+import meat from "../components/meats.js";
 import bread from "../components/bread.js";
+import veggie from "../components/veggies.js";
+import cheese from "../components/cheese.js";
+import condiments from "../components/condiments.js";
 
 
 const determineComponent = (id) => {
