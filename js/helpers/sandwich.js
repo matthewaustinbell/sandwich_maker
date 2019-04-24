@@ -31,7 +31,7 @@ const determineComponent = (id) => {
 };
 
 const setPrice = (ingPrice) => {
-   totalPrice += ingPrice; 
+   totalPrice += ingPrice/2; 
 };
   
 const getPrice = () => {
