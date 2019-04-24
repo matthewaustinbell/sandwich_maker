@@ -7,7 +7,7 @@ const condiments_plural = {
 
 
 const addCondiments = (type) => {
-    console.log('add condiments works!', condiments_plural[type]);
+    return condiments_plural[type];
 
 };
 

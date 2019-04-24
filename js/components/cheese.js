@@ -7,7 +7,7 @@ const cheeses = {
 
 
 const addCheese = (type) => {
-    console.log('add cheese works!', cheeses[type]);
+    return cheeses[type];
 
 };
 

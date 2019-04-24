@@ -7,7 +7,7 @@ const breads = {
 
 
 const addBread = (type) => {
-    console.log('add bread works!', breads[type]);
+    return breads[type];
 
 };
 

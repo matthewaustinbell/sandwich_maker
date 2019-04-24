@@ -7,7 +7,7 @@ const meats_plural = {
 
 
 const addMeats = (type) => {
-    console.log('add meats works!', meats_plural[type]);
+    return meats_plural[type];
 
 };
 

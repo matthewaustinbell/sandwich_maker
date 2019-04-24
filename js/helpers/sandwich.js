@@ -3,46 +3,58 @@ import cheese from "../components/cheese.js";
 import condiments from "../components/condiments.js";
 import meats from "../components/meats.js";
 import veggies from "../components/veggies.js";
+let totalPrice = 0;
 
 const determineComponent = (id) => {
     let component = id.split("_")
     switch(component[0]) {
         case 'bread':  
-        bread.addBread(component[1]);
+        setPrice(bread.addBread(component[1]));
         break; 
 
         case 'cheese':
-        cheese.addCheese(component[1]);
+        setPrice(cheese.addCheese(component[1]));
         break;
 
         case 'condiments':
-        condiments.addCondiments(component[1]);
+        setPrice(condiments.addCondiments(component[1]));
         break;
 
         case 'meats':
-        meats.addMeats(component[1]);
+        setPrice(meats.addMeats(component[1]));
         break;
 
         case 'veggies':
-        veggies.addVeggies(component[1]);
+        setPrice(veggies.addVeggies(component[1]));
         break;
     };
 };
 
-
+const setPrice = (ingPrice) => {
+   totalPrice += ingPrice; 
+};
   
+const getPrice = () => {
+  return totalPrice;
+};
+
+const printToDom = (divId, textToPrint) => {
+   let selectedDiv = document.getElementById(divId);
+    selectedDiv.innerHTML = textToPrint;
+  };
+  
+
   const eventListeners = () => {
-      let selectedBoxes = document.getElementsByClassName('checkBoxes')
-    addButton.addEventListener('click', function(e) {
-        console.log(e);
+      let selectedBoxes = document.getElementsByClassName('checkBoxes') ////i have all the checked boxes of the doc 
+    addButton.addEventListener('click', function(e) { ///i used a anonymous function 
     for (let i=0; i<selectedBoxes.length; i++){
      if (selectedBoxes[i].checked){
-        console.log(true); ./// write determine what add ingredient function to run (getbread,get cheese, or get veggies)
+        determineComponent(selectedBoxes[i].id)
      } else { 
          console.log(false);
      }
     }
-
+    printToDom('output', getPrice());
     });
   };
 
