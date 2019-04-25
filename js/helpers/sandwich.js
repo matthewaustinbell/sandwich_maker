@@ -12,6 +12,19 @@ const determineComponent = (id) => {
         case 'bread':  
         bread.addBread(component[1]);
         break; 
+        case 'meat':  
+        meat.addMeat(component[1]);
+        break; 
+        case 'cheese':  
+        cheese.addCheese(component[1]);
+        break; 
+        case 'veggie':  
+        veggie.addVeggie(component[1]);
+        break; 
+        case 'condiments':  
+        condiments.addCondiments(component[1]);
+        break; 
+        
     };
 };
 
