@@ -1,8 +1,8 @@
 const cheeses = {
-  Blue: 1.15,
-  Monterey: 1.23,
-  Cheddar: 1.43,
-  Parmesan: 1.06
+  Blue: 1.50,
+  Monterey: 1.25,
+  Cheddar: 1.60,
+  Parmesan: .75
 };
 
 

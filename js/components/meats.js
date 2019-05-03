@@ -1,8 +1,8 @@
 const meats = {
-  Roastbeef: 1.15,
-  Bacon: 1.23,
-  beefsteak: 1.43,
-  turkey: 1.06
+  Roastbeef: 2.00,
+  Bacon: 1.75,
+  beefsteak: 2.50,
+  turkey: 1.35
 };
 
 

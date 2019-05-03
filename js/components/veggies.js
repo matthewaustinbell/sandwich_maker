@@ -1,8 +1,8 @@
 const breads = {
-  Cucumber: 1.15,
-  Avocado: 1.23,
-  Lettuce: 1.43,
-  Spinach: 1.06
+  Cucumber: .35,
+  Avocado: .50,
+  Lettuce: .75,
+  Spinach: .60
 };
 
 
